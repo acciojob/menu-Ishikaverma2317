@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-import "../styles.css";
+import "../styles/App.css";
 
 const App = () => {
   const menuData = [
@@ -30,10 +30,7 @@ const App = () => {
   const [items, setItems] = useState(menuData);
 
   const filterItems = (category) => {
-    const filtered = menuData.filter(
-      (item) => item.category === category
-    );
-    setItems(filtered);
+    setItems(menuData.filter((item) => item.category === category));
   };
 
   return (
