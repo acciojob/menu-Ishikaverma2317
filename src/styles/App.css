@@ -1,12 +1,9 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+#main {
+  padding: 20px;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
