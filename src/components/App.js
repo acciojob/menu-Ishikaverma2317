@@ -2,36 +2,49 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import "../styles/App.css";
 
-const items = [
-  { id: 1, name: "Pancakes", category: "Breakfast" },
-  { id: 2, name: "Burger", category: "Lunch" },
-  { id: 3, name: "Shake", category: "Shakes" }
+const menuItems = [
+  {
+    id: 1,
+    name: "Pancakes",
+    category: "Breakfast",
+    price: "$5",
+    image: "https://via.placeholder.com/100",
+  },
+  {
+    id: 2,
+    name: "Omelette",
+    category: "Breakfast",
+    price: "$4",
+    image: "https://via.placeholder.com/100",
+  },
+  {
+    id: 3,
+    name: "Burger",
+    category: "Lunch",
+    price: "$8",
+    image: "https://via.placeholder.com/100",
+  },
+  {
+    id: 4,
+    name: "Salad",
+    category: "Lunch",
+    price: "$6",
+    image: "https://via.placeholder.com/100",
+  },
+  {
+    id: 5,
+    name: "Chocolate Shake",
+    category: "Shakes",
+    price: "$3",
+    image: "https://via.placeholder.com/100",
+  },
+  {
+    id: 6,
+    name: "Vanilla Shake",
+    category: "Shakes",
+    price: "$3",
+    image: "https://via.placeholder.com/100",
+  },
 ];
-
-function App() {
-  const [category, setCategory] = useState("Shakes");
-
-  const filteredItems = items.filter(
-    (item) => item.category === category
-  );
-
-  return (
-    <div id="main">
-      <button id="filter-btn-1" onClick={() => setCategory("Breakfast")}>
-        Breakfast
-      </button>
-
-      <button id="filter-btn-2" onClick={() => setCategory("Lunch")}>
-        Lunch
-      </button>
-
-      <button id="filter-btn-3" onClick={() => setCategory("Shakes")}>
-        Shakes
-      </button>
-
-      <Menu items={filteredItems} />
-    </div>
-  );
-}
 
 export default App;
