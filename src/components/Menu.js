@@ -9,7 +9,8 @@ function Menu({ items }) {
           data-test-id={`menu-item-${item.category.toLowerCase()}`}
         >
           <h3>{item.name}</h3>
-          <p>{item.price}</p>
+          <p>{item.category}</p>
+          <p>₹{item.price}</p>
         </div>
       ))}
     </div>
