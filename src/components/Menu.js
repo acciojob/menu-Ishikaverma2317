@@ -3,14 +3,12 @@ import React from "react";
 function Menu({ items }) {
   return (
     <div>
-      {items.map((item) => (
+      {items.map((item, index) => (
         <div
-          key={item.id}
+          key={index}
           data-test-id={`menu-item-${item.category.toLowerCase()}`}
         >
-          <h3>{item.name}</h3>
-          <p>{item.category}</p>
-          <p>₹{item.price}</p>
+          {item.name}
         </div>
       ))}
     </div>
