@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-import "../styles/styles.css";   // correct path
+import "../styles/App.css";   // correct path
 
 const items = [
   { id: 1, name: "Pancakes", category: "Breakfast", price: 120 },
